@@ -171,7 +171,6 @@ services:
     networks:
      - conpot_local_IEC104
     ports:
-     - "161:161/udp"
      - "2404:2404"
     image: ${TPOT_REPO}/conpot:${TPOT_VERSION}
     pull_policy: ${TPOT_PULL_POLICY}
@@ -577,7 +576,6 @@ services:
      - "110:110"
      - "123:123"
      - "143:143"
-     - "161:161"
      - "389:389"
      - "443:443"
      - "445:445"
